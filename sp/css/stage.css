@@ -1,0 +1,183 @@
+#contents-title {
+	background-color: #fbc405;
+}
+#contents-title h2 i {
+	top: 7px;
+	right: 4px;
+}
+#contents-title h2:after {
+	width: 252px;
+}
+.note {
+	font-size: 15px;
+	margin: 30px 20px 30px 20px;
+}
+.controls{
+	background: #fff;
+	width: 75%;
+	padding: 10px;
+	margin: 0 auto;
+	border: solid 3px #bbb;
+}
+.controls h3 {
+	display: inline-block;
+	font-size: 18px;
+	width: 100px;
+  margin: 4px 0 0 10px;
+	border-left: 4px solid #fbc405;
+	border-right: 4px solid #fbc405;
+}
+.controls h3 i {
+	font-size: 21px;
+  position: relative;
+  top: 4px;
+  padding: 0px 0px 0px 2px;
+}
+.controls button{
+	display: inline-block;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	vertical-align: top;
+	padding: 5px 15px 5px 15px;
+	margin: 3px 0 0 20px;
+	background: #fbc405;
+	border: 0;
+	border-radius: 4px;
+}
+fieldset{
+  vertical-align: top;
+	width: 70%;
+  padding: 15px 0px 0px 0px;
+  margin:  0 auto;
+	border-left: none;
+	border: none;
+  border-radius: 3px;
+}
+fieldset h4 {
+    padding: 0 0 7px 0;
+}
+.checkbox{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.checkbox input[type="checkbox"]{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.checkbox i {
+	font-size: 23px;
+}
+.checkbox i:before {
+	content: "check_box_outline_blank";
+	color: #bbb;
+  transition: all 0.25s;
+}
+.checkbox input:checked + i:before {
+	content: "check_box";
+	color: #bbb;
+  transition: all 0.25s;
+}
+.checkbox label{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+	font-size: 15px;
+}
+/**
+ * Container/Target Styles
+ */
+
+.container {
+	text-align:justify;
+	position: relative;
+	top: 40px;
+}
+.container > .mix {
+	width: 90%;
+	padding: 30px 0 50px 0;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-bottom: solid 2px #aaa;
+}
+.container .mix,
+.container .gap{
+  display: inline-block;
+}
+.container .mix{
+  display: none;
+}
+.container .fail-message{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+	width: 100%;
+	height: 80px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.container .fail-message:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.container .fail-message span{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.container.fail .fail-message{
+  opacity: 1;
+  pointer-events: auto;
+}
+.stage-time {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 145px;
+	padding: 5px 0px 5px 12px;
+	margin: 0 0 -44px auto;
+	border: solid 4px #000;
+}
+.stage-time i {
+	position: absolute;
+	top: 6px;
+  left: 12px;
+}
+.stage-genre {
+	display: inline-block;
+	border: solid 4px #000;
+	border-radius: 68px;
+	padding: 10px 10px;
+}
+.stage-title {
+	position: relative;
+	color: #000;
+	margin-top: 10px;
+}
+.stage-title h3 {
+	display: inline-block;
+	font-size: 25px;
+	padding: 0 20px;
+	margin:0;
+}
+.stage-contents {
+	padding: 15px 20px 0 20px;
+	overflow: hidden;
+}

@@ -1,0 +1,52 @@
+body{font-family:'Noto Sans Japanese' , sans-serif;}
+a{text-decoration:none;display:block;}
+a:focus{outline:none;}
+p{margin:0;}
+h1{margin:0;}
+h2{margin:0;}
+h3{margin:0;}
+h4{margin:0;}
+h5{margin:0;}
+h6{margin:0;}
+ul{margin:0;padding:0;}
+li{list-style-type:none;}
+li:focus{outline:none;}
+button:focus{outline:none;}
+#main-title{padding-left:0px;}
+#nav{position:fixed;top:0px;width:100%;height:55px;background-color:#ffdc00;box-shadow:0px 1px 14px -4px rgba(0,0,0,0.9);z-index:1000;}
+#title{position:fixed;top:3px;color:#fff;font-size:30px;vertical-align:middle;padding:1px 10px;margin:0;z-index:2000;/*text-shadow: 2px 2px 1px #ccc;*/}
+#title a{color:#fff;font-size:30px;display:inline;}
+.togglebtn{position:relative;top:55px;right:0;}
+#menubtn{padding:4px 8px;border:none;border-radius:5px;background:none;position:absolute;top:-55px;right:10px;cursor:pointer;}
+#menuButton{display:block;width:27px;height:41px;position:absolute;top:8px;right:7px;z-index:3;}
+#menuButton span{display:block;background:#fff;width:26px;height:4px;position:absolute;left:1px;transition:all 0.4s;-webkit-transition:all 0.4s;-moz-transition:all 0.4s;}
+#menuButton span:first-child{top:7px;}
+#menuButton span:nth-child(2){margin-top:-1px;top:19px;}
+#menuButton span:last-child{bottom:8px;}
+#menuButton.active span:first-child{-webkit-transform:translateY(8px) rotate(45deg);-moz-transform:translateY(8px) rotate(45deg);-ms-transform:translateY(8px) rotate(45deg);transform:translateY(11.5px) rotate(45deg);}
+#menuButton.active span:nth-child(2){opacity:0;}
+#menuButton.active span:last-child{-webkit-transform:translateY(-8px) rotate(-45deg);-moz-transform:translateY(-8px) rotate(-45deg);-ms-transform:translateY(-8px) rotate(-45deg);transform:translateY(-10.5px) rotate(-45deg);}
+#menubtn span{display:inline-block;text-indent:-9999px;}
+#menu{display:none;}
+#nav ul{margin:0;padding:0;}
+#nav li{background-color:#fff;position:relative;list-style-type:none;transition:all 0.4s;z-index:1000;}
+#nav li a{color:#ffdc00;font-size:20px;font-weight:bold;text-align:right;padding:10px;border-bottom:solid 2px #ffdc00;}
+#nav li a.not{opacity:0.6 !important;pointer-events:none !important;}
+#contents-title{text-align:center;height:75px;}
+#contents-title h2{position:relative;color:#fff;font-size:30px;padding:11px 0;margin:0;}
+#contents-title i{position:relative;font-size:35px;}
+#contents-title h2:after{content:"";display:block;height:2px;margin-top:5px;margin-left:auto;margin-right:auto;background-color:#fff;}
+#main-contents{margin-top:55px;}
+footer{height:180px;max-900px;margin-top:100px;background-color:#ffdc00;bottom:0;clear:both;overflow:hidden;}
+#pagetop{position:relative;top:14px;text-align:center;height:60px;margin:0 auto 14px auto;overflow:hidden;z-index:2;}
+#pagetop:before,#pagetop:after{content:"";display:block;position:absolute;width:50%;height:1px;background-color:#fff;bottom:15px;}
+#pagetop:before{left:-44px;}
+#pagetop:after{right:-44px;}
+#pagetop .btn{width:100px;display:block;margin:0 auto;}
+#pagetop .btn:before{content:"";display:block;background-color:#fff;width:1px;height:63px;position:absolute;bottom:6px;left:50%;z-index:1;margin-left:-22px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}
+#pagetop .btn:after{content:"";display:block;background-color:#fff;width:1px;height:63px;position:absolute;bottom:6px;left:50%;z-index:1;margin-left:-26px;left:auto;right:50%;margin-left:0;margin-right:-23px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);}
+#pagetop .btn i{font-size:68px;color:#fff;position:relative;top:3px;}
+.copylight-attention{font-size:13px;color:#fff;text-align:center;margin:0 0 10px 0;}
+.copylight-attention:first-of-type{margin:10px 0 0 0;}
+.copylight{font-size:16px;color:#fff;text-align:center;margin-top:-5px;}
+.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:'liga';}

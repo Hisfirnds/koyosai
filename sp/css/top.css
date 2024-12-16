@@ -1,0 +1,166 @@
+a {
+	text-decoration: none;
+	display: block;
+}
+#containear {
+	margin-top: 48px;
+}
+/*スライド画像の横幅可変*/
+.slider .slick-slide {
+	overflow: hidden;
+}
+.slider .slick-slide img {
+  width: 100%;
+  height: auto;
+	transition: transform 0.3s ease-out;
+}
+.slider .slick-slide span {
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	padding: 5px 15px;
+	background-color: rgba(0,0,0,0.15);
+	transition: all 0.3s ease-out;
+}
+.slider .slick-slide span p {
+	color: #fff;
+}
+.slider .slick-slide .slide-1-detail {
+	padding: 5px 15px 25px 15px;
+}
+.slider .slick-slide .slide-1-detail p:first-of-type {
+	font-size: 17px;
+	margin: 0 0 2px 0;
+}
+.slider .slick-slide .slide-1-detail p:nth-of-type(2) {
+	font-size: 14px;
+	padding: 0 10px 0 10px;
+}
+.slider .slick-slide .slide-2-detail p:first-of-type {
+	font-size: 17px;
+	margin: 0 0 2px 0;
+}
+.slider .slick-slide .slide-2-detail p:nth-of-type(2) {
+	font-size: 14px;
+	padding: 0 10px 0 10px;
+}
+/*左右の矢印の色を変える*/
+.slider .slick-prev:before,
+.slider .slick-next:before {
+    color: #000;
+}
+/*左右の矢印の位置を変える*/
+.slider .slick-next {
+    right: 20px;
+    z-index: 99;
+}
+.slider .slick-prev {
+  left: 15px;
+    z-index: 100;
+}
+/*スライド数のドットの色を変える*/
+.slider .slick-dots li.slick-active button:before,
+.slider .slick-dots li button:before {
+    color: #000;
+}
+#image-contents {
+	height:400px;
+}
+#main-contents {
+	max-width:901px;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -81px;
+}
+img#countdown-title {
+	margin: 15px;
+}
+.ticker-slider-box {
+  margin: 15px 15px 50px 15px;
+}
+.ticker-slider-title {
+	position: relative;
+	font-size: 25px;
+  color: #55acee;
+}
+.ticker-slider-title i {
+	font-size: 28px;
+}
+.ticker-slider-title span {
+	position: absolute;
+	top: 9px;
+	left: 130px;
+	color: #55acee;
+	font-size: 16px;
+	margin: 0 0 0 auto;
+}
+.ticker-slider {
+	max-width: 969px;
+	height: 140px;
+	padding: 10px 0;
+	margin: 0 auto;
+	border: solid 4px #55acee;
+}
+@media screen and (max-width: 600px) {
+	.ticker-slider {
+		height: 200px;
+	}
+}
+@media screen and (max-width: 360px) {
+	.ticker-slider {
+		height: 260px;
+	}
+}
+.ticker-slider li {
+	padding: 0 20px 0 20px;
+}
+.ticker-slider li a {
+	color: #000;
+}
+.ticker-slider li span {
+  position: absolute;
+  bottom: 0%;
+  display: block;
+  color: #000;
+}
+#news-title {
+	font-size: 24px;
+	color: #ffdf00;
+	margin: 0 15px;
+}
+#main-scr-contents {
+	overflow: scroll;
+	height: 250px;
+	border-top: solid 4px #ffdc00;
+	border-bottom: solid 4px #ffdc00;
+	margin: 0 15px;
+	background-color: #fff;
+	overflow-x: hidden;
+}
+.one-news {
+	padding: 30px 0;
+  margin: 0 40px;
+	border-bottom: 1px solid #cacaca;
+}
+.one-news:last-child {
+	border: none;
+}
+.news-time {
+	font-size: 18px;
+  color: #9e9e9e;
+	padding: 0 0 5px 0;
+}
+.news-contents {
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+}
+.each-content {
+	max-width: 430px;
+	padding-left:20px;
+	border-bottom: 1px solid silver;
+	float:left;
+}
+.left-side .each-content {
+	border-right: 1px solid silver;
+}

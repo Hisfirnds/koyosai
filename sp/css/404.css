@@ -1,0 +1,35 @@
+#contents-title {
+	background-color: #fff;
+	border-top: solid 8px #ffdc00;
+	border-bottom: solid 8px #ffdc00;
+}
+#contents-title h2 {
+	color: #ffdc00;
+}
+#contents-title h2 i {
+	top: 6px;
+	right: 4px;
+}
+#contents-title h2:after {
+	width: 160px;
+	background: #ffdc00;
+}
+#container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.note {
+	margin: 0 20px;
+}
+.note:first-child {
+	margin-top: 40px;
+}
+.note:nth-of-type(2) {
+	margin-top: 20px;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 105px;
+}
