@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /about/
+Disallow: /map/
+Disallow: /exhibition/
+Disallow: /stage/
+Disallow: /notice/
+Disallow: /404/
+Disallow: /sp/about/
+Disallow: /sp/map/
+Disallow: /sp/exhibition/
+Disallow: /sp/stage/
+Disallow: /sp/notice/
+Disallow: /sp/404/
+Disallow: /survey/
