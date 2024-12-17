@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>出展企画 | 久喜北陽高校「第28回 光陽祭」公式サイト</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../CommonCss/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="../CommonCss/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../CommonCss/fonts.css"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/exhibition.css"/>
+		<script type="text/javascript" src="../CommonJs/userAgentExhibition.js"></script>
+		<script src="../CommonJs/vendor/modernizr.custom.min.js"></script>
+		<script src="../CommonJs/vendor/jquery-3.1.0.min.js"></script>
+		<script src="../CommonJs/vendor/jquery.easing.1.3.js"></script>
+		<script src="../CommonJs/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="../CommonJs/vendor/jquery.smooth-scroll.min.js"></script>
+		<script src="../CommonJs/vendor/smooth-scroll.min.js"></script>
+		<script src="../CommonJs/vendor/jquery.mixitup.min.js"></script>
+		<script src="../js/exhibition.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div id="title">
+				<h2>
+					<a href="../">
+						第28回光陽祭
+					</a>
+				</h2>
+			</div>
+			<div id="nav">
+				<div id="menu">
+				<ul>
+					<li>
+						<a id="about" href="../about/">
+								光陽祭について
+								<span class="bg">
+									<span>光陽祭について</span>
+								</span>
+						</a>
+					</li>
+					<li>
+						<a id="floormap" href="../map/">
+								会場マップ
+								<span class="bg">
+									<span>会場マップ</span>
+								</span>
+						</a>
+					</li>
+					<li>
+						<a class="selected" id="exhibition" href="../exhibition/">
+								出展企画
+								<span class="bg">
+									<span>出展企画</span>
+								</span>
+						</a>
+					</li>
+					<li>
+						<a id="stage" href="../stage/">
+									体育館ステージ
+									<span class="bg">
+										<span>体育館ステージ</span>
+									</span>
+						</a>
+					</li>
+					<li>
+						<a id="attention" href="../notice/">
+									注意事項
+									<span class="bg">
+										<span>注意事項</span>
+									</span>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+		<div id="container">
+		<div id="contents-title">
+			<h2><i class="material-icons">place</i>出展企画</h2>
+		</div>
+		<div id="main-contents">
+<!--メインのコンテンツのまとまり-->
+<!--各項目にジャンプするナビゲーション-->
+		<form class="controls" id="Filters">
+			<h3><i class="material-icons">search</i>絞り込み</h3>
+			<button id="Reset">すべてクリア</button>
+			<fieldset>
+				<h4>学年・部活</h4>
+  			<div class="checkbox" id="checkbox-grade-1">
+    			<input type="checkbox" value=".grade-1"/>
+					<i class="material-icons"></i>
+    			<label>1年生</label>
+  			</div>
+    		<div class="checkbox" id="checkbox-grade-2">
+    			<input type="checkbox" value=".grade-2"/>
+					<i class="material-icons"></i>
+    			<label>2年生</label>
+  			</div>
+  			<div class="checkbox" id="checkbox-grade-3">
+    			<input type="checkbox" value=".grade-3"/>
+					<i class="material-icons"></i>
+    			<label>3年生</label>
+  			</div>
+  			<div class="checkbox" id="checkbox-club">
+      			<input type="checkbox" value=".club"/>
+						<i class="material-icons"></i>
+    				<label>部活動</label>
+  			</div>
+  			<div class="checkbox" id="checkbox-sponsor">
+    			<input type="checkbox" value=".sponsor"/>
+					<i class="material-icons"></i>
+    			<label>主催企画</label>
+  			</div>
+			</fieldset>
+			<fieldset>
+				<h4>ジャンル</h4>
+				<div class="checkbox">
+    			<input type="checkbox" value=".food"/>
+					<i class="material-icons"></i>
+    			<label>フード</label>
+  			</div>
+				<div class="checkbox">
+    			<input type="checkbox" value=".attraction"/>
+					<i class="material-icons"></i>
+    			<label>アトラクション</label>
+  			</div>
+				<div class="checkbox">
+    			<input type="checkbox" value=".horror"/>
+					<i class="material-icons"></i>
+    			<label>ホラー</label>
+  			</div>
+				<div class="checkbox">
+    			<input type="checkbox" value=".entertainment"/>
+					<i class="material-icons"></i>
+    			<label>パフォーマンス</label>
+  			</div>
+				<div class="checkbox">
+    			<input type="checkbox" value=".product"/>
+					<i class="material-icons"></i>
+    			<label>物販</label>
+  			</div>
+				<div class="checkbox">
+    			<input type="checkbox" value=".display"/>
+					<i class="material-icons"></i>
+    			<label>展示</label>
+  			</div>
+				<div class="checkbox">
+    			<input type="checkbox" value=".experience"/>
+					<i class="material-icons"></i>
+    			<label>体験</label>
+  			</div>
+				<div class="checkbox">
+    			<input type="checkbox" value=".rest"/>
+					<i class="material-icons"></i>
+    			<label>休憩所</label>
+  			</div>
+				<div class="checkbox">
+    			<input type="checkbox" value=".other"/>
+					<i class="material-icons"></i>
+    			<label>その他</label>
+  			</div>
+			</fieldset>
+		</form>
+		<div id="Container" class="container">
+			<div class="fail-message"><span>該当する団体はありません</span></div>
+<!--1年生各クラス-->
+		<div class="mix grade-1 horror">
+			<div class="exhibitionListBox">
+				<span class="place">A401</span>
+				<h4 class="exhi-team">1年1組</h4>
+				<h4 class="exhi-genre">ホラー</h4>
+				<div class="exhi-img">
+					<img src="../img/exhi-thum_101.jpg">
+				</div>
+				<div class="exhibitionListTitle">
+					<p>赤い女</p>
+				</div>
+				<div class="exhibitionListCompany">
+					<p>舞台は夜の病院。迫り来るお化け達から赤ちゃんを助け出そう！！是非来てください！</p>
+				</div>
+			</div>
+		</div>
+		<div class="mix grade-1 horror">
+			<div class="exhibitionListBox">
+				<span class="place">A402</span>
+				<h4 class="exhi-team">1年2組</h4>
+				<h4 class="exhi-genre">ホラー</h4>
+				<div class="exhi-img">
+					<img src="../img/exhi-thum_102.jpg">
+				</div>
+				<div class="exhibitionListTitle">
+					<p>戦慄刑務所</p>
+				</div>
+				<div class="exhibitionListCompany">
+					<p>この刑務所は危険です。逃げてください。もう何が起こるかわかりません。来るか来ないかはあなた次第です。</p>
+				</div>
+			</div>
+		</div>
+		<div class="mix grade-1 attraction">
+			<div class="exhibitionListBox">
+				<span class="place">A403</span>
+				<h4 class="exhi-team">1年3組</h4>
+				<h4 class="exhi-genre">アトラクション</h4>
+				<div class="exhi-img">
+					<img src="../img/exhi-thum_103.jpg">
+				</div>
+				<div class="exhibitionListTitle">
+					<p>ミニミニミニオン</p>
+				</div>
+				<div class="exhibitionListCompany">
+					<p>ミニオンの世界で謎をとき、バナナをＧＥＴしてゴールを目指せ！ぜひ1-3まで来てください！</p>
+				</div>
+			</div>
+		</div>
+		<div class="mix grade-1 attraction">
+			<div class="exhibitionListBox">
+				<span class="place">A404</span>
+				<h4 class="exhi-team">1年4組</h4>
+				<h4 class="exhi-genre">アトラクション</h4>
+				<div class="exhi-img">
+					<img src="../img/exhi-thum_104.jpg">
+				</div>
+				<div class="exhibitionListTitle">
+					<p>Ennichi</p>
+				</div>
+					<div class="exhibitionListCompany">
+						<p>楽しいアトラクション、記念撮影が出来る顔出しパネルがあります。また、ビンゴも開催するのでぜひ来て下さい！</p>
+					</div>
+			</div>
+		</div>
+		<div class="mix grade-1 food">
+			<div class="exhibitionListBox">
+				<span class="place">A405</span>
+				<h4 class="exhi-team">1年5組</h4>
+				<h4 class="exhi-genre">フード</h4>
+				<div class="exhi-img">
+					<img src="../img/exhi-thum_105.jpg">
+				</div>
+				<div class="exhibitionListTitle">
+					<p>Summer&amp;Winter</p>
+				</div>
+				<div class="exhibitionListCompany">
+					<p>冷たいアイスやジュースを多くそろえています。また、割引きサービス付きのミニゲームも用意しています。ぜひ1-5まで！！</p>
+				</div>
+			</div>
+		</div>
+		<div class="mix grade-1 attraction">
+			<div class="exhibitionListBox">
+				<span class="place">A406</span>
+				<h4 class="exhi-team">1年6組</h4>
+				<h4 class="exhi-genre">アトラクション</h4>
+				<div class="exhi-img">
+					<img src="../img/exhi-thum_106.jpg">
+				</div>
+				<div class="exhibitionListTitle">
+					<p>はじめてのワッショイ</p>
+				</div>
+				<div class="exhibitionListCompany">
+					<p>今年の夏は楽しんでる？まだ夏は終わらない！定番なものから、このクラス唯一の企画も！ワッショイしよう！</p>
+				</div>
+			</div>
+		</div>
+		<div class="mix grade-1 food">
+			<div class="exhibitionListBox">
+				<span class="place">A407</span>
+				<h4 class="exhi-team">1年7組</h4>
+				<h4 class="exhi-genre">フード</h4>
+				<div class="exhi-img">
+					<img src="../img/exhi-thum_107.jpg">
+				</div>
+				<div class="exhibitionListTitle">
+					<p>Splash Tapioka</p>
+				</div>
+				<div class="exhibitionListCompany">
+					<p>1年7組ではタピオカとミスタードーナツを販売しています。教室の半分では休憩所。そして、教室のもう半分では、少し変わった方法で販売しています。汗が水しぶきになるくらい頑張りますので、ぜひ1年7組に来てください。</p>
+				</div>
+			</div>
+		</div>
+		<div class="mix grade-1 attraction">
+			<div class="exhibitionListBox">
+				<span class="place">A408</span>
+				<h4 class="exhi-team">1年8組</h4>
+				<h4 class="exhi-genre">アトラクション</h4>
+				<div class="exhi-img">
+					<img src="../img/exhi-thum_108.jpg">
+				</div>
+				<div class="exhibitionListTitle">
+					<p>Hachiy Potter～魔法使いになろう～</p>
+				</div>
+				<div class="exhibitionListCompany">
+					<p>この迷路を制した者は夢の「魔法使い」になれる！迷路の途中にあるアトラクションやクイズの成績が良ければ良いほど高ランクの魔法使いに近づけます。最後にはみんなが憧れる魔法使いの「あの人」と会うことができるカモ！ぜひ1-8の迷路をお楽しみ下さい！</p>
+				</div>
+			</div>
+		</div>
+<!--2年生各クラス-->
+			<div class="mix grade-2 horror">
+				<div class="exhibitionListBox">
+					<span class="place">A101</span>
+					<h4 class="exhi-team">2年1組</h4>
+					<h4 class="exhi-genre">ホラー</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_201.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>渡邊病院</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>今や廃病院となった渡邊病院。あなたはこの恐怖に耐え、ミッションを無事クリアできるのか！？では、みなさんの無事を…</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix grade-2 food">
+				<div class="exhibitionListBox">
+					<span class="place">A102</span>
+					<h4 class="exhi-team">2年2組</h4>
+					<h4 class="exhi-genre">フード</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_202.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>岡部庵 Part2</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>昨年に続き、大好評だった「岡部庵」を1年振りにリニューアルオープンします。バージョンアップした新店舗に乞うご期待を。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix grade-2 attraction">
+				<div class="exhibitionListBox">
+					<span class="place">A103</span>
+					<h4 class="exhi-team">2年3組</h4>
+					<h4 class="exhi-genre">アトラクション</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_203.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>Nightmare World</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>ディズニー作品である「ホーンテッドマンション」×「ナイトメアビフォアークリスマス」の世界観を忠実に再現したアトラクションです。ジャック達が皆さんをお待ちしています。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix grade-2 horror">
+				<div class="exhibitionListBox">
+					<span class="place">A204</span>
+					<h4 class="exhi-team">2年4組</h4>
+					<h4 class="exhi-genre">ホラー</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_204.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>律子の館～下の句～</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>魔女律子の500歳の誕生日にプレゼントとして生きた人の血を捧げます。襲い掛かってくる律子たちの恐怖にあなたは耐えきれるか！？</p>
+					</div>
+				</div>
+			</div>
+			<div	class="mix grade-2 attraction">
+				<div class="exhibitionListBox">
+					<span class="place">A105</span>
+					<h4 class="exhi-team">2年5組</h4>
+					<h4 class="exhi-genre">アトラクション</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_205.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>カップリング<br>～運命の恋、拾いました～</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>番号が合った人と奇跡の出会い！？青春な写真もたくさん撮れます。ぜひ2年5組に来て下さい。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix grade-2 attraction">
+				<div class="exhibitionListBox">
+					<span class="place">A106</span>
+					<h4 class="exhi-team">2年6組</h4>
+					<h4 class="exhi-genre">アトラクション</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_206.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>GITA house</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>かっこいい音楽や、ゲームを用意しています！ぜひGITA houseへ来てください！お待ちしています！</p>
+					</div>
+				</div>
+			</div>
+			<div	class="mix grade-2 food">
+				<div class="exhibitionListBox">
+					<span class="place">A107</span>
+					<h4 class="exhi-team">2年7組</h4>
+					<h4 class="exhi-genre">フード</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_207.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>だがしかし</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>冷たいラムネやたくさんの駄菓子を販売しています！！そのほかにも射的もあり成功すればお菓子がもらえます。ぜひ来店してください！！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix grade-2 attraction">
+				<div class="exhibitionListBox">
+					<span class="place">A208</span>
+					<h4 class="exhi-team">2年8組</h4>
+					<h4 class="exhi-genre">アトラクション</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_208.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>NIHACHI HOUSE</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>子供から大人まで楽しめる迷路アトラクション！ぜひ２年８組 NIHACHI HOUSEに来てください！！</p>
+					</div>
+				</div>
+			</div>
+	<!--3年生各クラス-->
+				<div class="mix grade-3 food">
+					<div class="exhibitionListBox">
+						<span class="place">A301</span>
+						<h4 class="exhi-team">3年1組</h4>
+						<h4 class="exhi-genre">フード</h4>
+						<div class="exhi-img">
+							<img src="../img/exhi-thum_301.jpg">
+						</div>
+						<div class="exhibitionListTitle">
+							<p>おだ～かパパの31アイスクリーム</p>
+						</div>
+						<div class="exhibitionListCompany">
+							<p>私たち3年1組はアイスとジュースを売ります！！3年1組なので31アイスクリームも数量限定で販売します！！午前と午後で店内の雰囲気がかわるので、何度きてもみなさまにお楽しみいただけるようになっています！！店員のかわいいコスチュームをするのでお楽しみに～（・ｖ・）</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix grade-3 attraction">
+					<div class="exhibitionListBox">
+						<span class="place">A302</span>
+						<h4 class="exhi-team">3年2組</h4>
+						<h4 class="exhi-genre">アトラクション</h4>
+						<div class="exhi-img">
+							<img src="../img/exhi-thum_302.jpg">
+						</div>
+						<div class="exhibitionListTitle">
+							<p>Harry Potter</p>
+						</div>
+						<div class="exhibitionListCompany">
+							<p>私達3-2は、「夢を現実に」をテーマに、ハリーポッターの世界を体験できるクラスです。「魔法を使いたい！」と現実逃避しているそこのあなた！3-2城でお待ちしております。</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix grade-3 food">
+					<div class="exhibitionListBox">
+						<span class="place">A303</span>
+						<h4 class="exhi-team">3年3組</h4>
+						<h4 class="exhi-genre">フード</h4>
+						<div class="exhi-img">
+							<img src="../img/exhi-thum_303.jpg">
+						</div>
+						<div class="exhibitionListTitle">
+							<p>デイリー山崎</p>
+						</div>
+						<div class="exhibitionListCompany">
+							<p>私たちは食品販売にしました。飲み物と山崎パンを売ります！！ライブステージでイベントもやっているのでぜひ来てください。待ってます！！</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix grade-3 attraction">
+					<div class="exhibitionListBox">
+						<span class="place">A304</span>
+						<h4 class="exhi-team">3年4組</h4>
+						<h4 class="exhi-genre">アトラクション</h4>
+						<div class="exhi-img">
+							<img src="../img/exhi-thum_304.jpg">
+						</div>
+						<div class="exhibitionListTitle">
+							<p>神秘の部屋－TORE!－</p>
+						</div>
+						<div class="exhibitionListCompany">
+							<p>3-4が作り出した神秘的な空間で、様々なミッションに参加してもらい、クリアできなかったらこの部屋を脱出することが出来ない…。あなたはこの部屋を脱出することができるのか！？</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix grade-3 horror">
+					<div class="exhibitionListBox">
+						<span class="place">A305</span>
+						<h4 class="exhi-team">3年5組</h4>
+						<h4 class="exhi-genre">ホラー</h4>
+						<div class="exhi-img">
+							<img src="../img/exhi-thum_305.jpg">
+						</div>
+						<div class="exhibitionListTitle">
+							<p>In to the R.I.P</p>
+						</div>
+						<div class="exhibitionListCompany">
+							<p>忍び寄る恐怖にあなたは耐えられるか！？ホッとする間もない一瞬一瞬をあなたにお届けいたします。ぜひ3年5組へ…</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix grade-3 attraction">
+					<div class="exhibitionListBox">
+						<span class="place">A306</span>
+						<h4 class="exhi-team">3年6組</h4>
+						<h4 class="exhi-genre">アトラクション</h4>
+						<div class="exhi-img">
+							<img src="../img/exhi-thum_306.jpg">
+						</div>
+						<div class="exhibitionListTitle">
+							<p>VSサンロク</p>
+						</div>
+						<div class="exhibitionListCompany">
+							<p>あの人気番組「VS嵐」が3年6組にやってきた！！3年6組の愉快な仲間がみんなのこと待ってるよ&#9829;最高得点を獲るのは誰だ！？ぜひきてね&#9829;&#9829;</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix grade-3 other">
+					<div class="exhibitionListBox">
+						<span class="place">A307</span>
+						<h4 class="exhi-team">3年7組</h4>
+						<h4 class="exhi-genre">その他</h4>
+						<div class="exhi-img">
+							<img src="../img/exhi-thum_307.jpg">
+						</div>
+						<div class="exhibitionListTitle">
+							<p>～ミス・ミスターコン～</p>
+						</div>
+						<div class="exhibitionListCompany">
+							<p>毎年恒例、3-7のミス＆ミスターコンです☆☆各学年のミスコン、ミスターコンなど様々な人が集まります！とっても盛り上がるので、ぜひ3-7に来てください！！！</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix grade-3 horror">
+					<div class="exhibitionListBox">
+						<span class="place">A308</span>
+						<h4 class="exhi-team">3年8組</h4>
+						<h4 class="exhi-genre">ホラー</h4>
+						<div class="exhi-img">
+							<img src="../img/exhi-thum_308.jpg">
+						</div>
+						<div class="exhibitionListTitle">
+							<p>お化け屋敷</p>
+						</div>
+						<div class="exhibitionListCompany">
+							<p>3年8組こと、サンパチのおばけやしきです。とってもこわーーーーーーーーーーーーーーーーーーーーいです</p>
+						</div>
+					</div>
+				</div>
+<!--部活動-->
+			<div class="mix club entertainment">
+				<div class="exhibitionListBox">
+					<span class="place">グラウンド</span>
+					<h4 class="exhi-team">野球部</h4>
+					<h4 class="exhi-genre">パフォーマンス</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_405.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>招待試合<br>久喜北陽 vs 境</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>9月4日日曜日、文化祭一般公開日に茨城県立境高校を招き、9時30分から1試合のみ試合を行います。ぜひ見に来て下さい！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club display">
+				<div class="exhibitionListBox">
+					<span class="place">1階廊下</span>
+					<h4 class="exhi-team">写真部</h4>
+					<h4 class="exhi-genre">展示</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_412.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>写真展</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>部員が一生懸命準備した、今まで撮った様々な写真の展示。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club product">
+				<div class="exhibitionListBox">
+					<span class="place">1階階段下</span>
+					<h4 class="exhi-team">文芸部</h4>
+					<h4 class="exhi-genre">物販</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_401.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>部誌ロード</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>昇降口左手階段下で部誌を販売しています。部員皆で精一杯作った至高の一冊を、ぜひ手にお取りください！！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club display experience">
+				<div class="exhibitionListBox">
+					<span class="place">A110</span>
+					<h4 class="exhi-team">華道部</h4>
+					<h4 class="exhi-genre">展示・体験</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_402.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>展示＆アレンジ体験</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>華道部では、部員の作品展示を行います。また、500円でのアレンジメント体験を行います。教室内も可愛くしてあるので、ぜひ来てください！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club other">
+				<div class="exhibitionListBox">
+					<span class="place">昇降口</span>
+					<h4 class="exhi-team">JRC部</h4>
+					<h4 class="exhi-genre">その他</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_403.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>募金活動</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>あなたの力で世界を変えませんか??昇降口前にてあなたをお待ちしています。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club food">
+				<div class="exhibitionListBox">
+					<span class="place">A109</span>
+					<h4 class="exhi-team">家庭部</h4>
+					<h4 class="exhi-genre">フード</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_404.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>手作りお菓子の販売</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>部員達が一生懸命作ったブラウニーとクッキー（プレーン、チョコチップ、ココアナッツ）の詰め合わせで販売します。毎年大人気なので、ぜひぜひ食べに来てください！！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club display">
+				<div class="exhibitionListBox">
+					<span class="place">美術室</span>
+					<h4 class="exhi-team">美術部</h4>
+					<h4 class="exhi-genre">展示</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_406.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>びじゅちゅーん</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>デッサン、油画、静物画…個性溢れまくっているメンバーによる作品を展示しています。フラッと入ってゆるゆるっと鑑賞していって下さい。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club food">
+				<div class="exhibitionListBox">
+					<span class="place">中会議室</span>
+					<h4 class="exhi-team">茶道部</h4>
+					<h4 class="exhi-genre">フード</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_407.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>お茶会</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>茶道部員が浴衣を着てお点前をします。抹茶とお菓子で100円です。2階中会議室で部員一同お待ちしています。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club entertainment">
+				<div class="exhibitionListBox">
+					<span class="place">体育館</span>
+					<h4 class="exhi-team">チアリーディング部</h4>
+					<h4 class="exhi-genre">パフォーマンス</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_408.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>Come see our stage "SUNRISE"</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>私たちSUNRISEは、新体制の28人で発表します。いろんなダンスを精一杯踊るのでぜひ見に来て下さい！！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club display">
+				<div class="exhibitionListBox">
+					<span class="place">書道室・昇降口</span>
+					<h4 class="exhi-team">書道部</h4>
+					<h4 class="exhi-genre">展示</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_409.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>展覧会</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>夏休みの間練習した作品を書道室にて展示します。恒例となった部員全員による大作も昇降口にて展示するので、ぜひご覧ください。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club attraction">
+				<div class="exhibitionListBox">
+					<span class="place">第3コンピューター室</span>
+					<h4 class="exhi-team">情報処理部</h4>
+					<h4 class="exhi-genre">アトラクション</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_410.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>アトラクション<br>プログラミング教室<br>レビュークイズetc…</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>ここでは、ゲームを作りながら学習するプログラミング教室を開講しています。また、来場者参加型のクイズショーも開催します。その他、アスキーアートの作成、課題研究発表も行います。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club display">
+				<div class="exhibitionListBox">
+					<span class="place">LL教室</span>
+					<h4 class="exhi-team">ESS部</h4>
+					<h4 class="exhi-genre">展示</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_411.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>プーさんのステンドグラス</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>LL教室の窓をプーさんのステンドグラスで飾ります！部活動の内容を紹介する展示物もあります。ぜひ3階LL教室まで！！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club product">
+				<div class="exhibitionListBox">
+					<span class="place">A409</span>
+					<h4 class="exhi-team">社会部</h4>
+					<h4 class="exhi-genre">物販</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_no-image.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>部誌の配布</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>社会部の部誌配布です。地理や歴史についてまとめました。雑学的な知識や勉強の役に立つかも！！！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club display">
+				<div class="exhibitionListBox">
+					<span class="place">理科部</span>
+					<h4 class="exhi-team">理科部</h4>
+					<h4 class="exhi-genre">展示</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_413.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>研究展示発表</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>理科部では研究結果の展示や、アルコールロケットの発射をやっています。今回はそれに加え、実験もやる予定なので、理科が好き、興味がある人は是非来てください！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix club entertainment">
+				<div class="exhibitionListBox">
+					<span class="place">視聴覚室</span>
+					<h4 class="exhi-team">コーラス部</h4>
+					<h4 class="exhi-genre">パフォーマンス</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_414.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>うたうたいのうた</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>一度は耳にしたことがある、そんな曲を女声合唱でお届けします！！12：00から4階の視聴覚室で待ってます！！</p>
+					</div>
+				</div>
+			</div>
+<!--主催企画-->
+			<div class="mix sponsor product">
+				<div class="exhibitionListBox">
+					<span class="place">図書室</span>
+					<h4 class="exhi-team">図書委員会</h4>
+					<h4 class="exhi-genre">物販</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_no-image.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>ブックカバー・しおり製作</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>ブックカバー・しおり製作を行っています。自分専用のブックカバーやしおりで、もっと楽しくLet's 読書！</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix sponsor other">
+				<div class="exhibitionListBox">
+					<span class="place">社会科室</span>
+					<h4 class="exhi-team">広報部</h4>
+					<h4 class="exhi-genre">その他</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_no-image.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>個別相談コーナー</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>本校への進学を考えている中学生の皆さん、保護者の皆さんへ11:00～14:00に個別相談会を実施しています。あなたの質問にお答えします。お気軽にどうぞ。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix sponsor rest">
+				<div class="exhibitionListBox">
+					<span class="place">A310</span>
+					<h4 class="exhi-team">PTA本部</h4>
+					<h4 class="exhi-genre">休憩所</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_003.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>リラックママ</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>会場巡りに疲れた時、ゆっくりまったり出来る部屋です！冷たい麦茶とお菓子を用意してお待ちしています。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix sponsor rest other">
+				<div class="exhibitionListBox">
+					<span class="place">大会議室</span>
+					<h4 class="exhi-team">同窓会</h4>
+					<h4 class="exhi-genre">その他・休憩所</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_002.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>休憩所</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>無料のドリンク・お菓子を用意。キッズスペースもあり。13:00より同窓会総会を行います。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mix sponsor experience">
+				<div class="exhibitionListBox">
+					<span class="place">A309</span>
+					<h4 class="exhi-team">PTA教養文化体験</h4>
+					<h4 class="exhi-genre">体験</h4>
+					<div class="exhi-img">
+						<img src="../img/exhi-thum_001.jpg">
+					</div>
+					<div class="exhibitionListTitle">
+						<p>ビーズ・アクセサリー作り</p>
+					</div>
+					<div class="exhibitionListCompany">
+						<p>ビーズでブレスレット、ストラップ、アクセサリー作りが体験できます。1つ50円です。毎年大好評で、大勢の皆様に喜んで頂いています。ぜひお立寄り下さい。</p>
+					</div>
+				</div>
+			</div>
+			<div class="gap"></div>
+			<div class="gap"></div>
+		</div>
+	</div><!--各部門別分け終了-->
+</div>
+</div>
+<footer>
+	<p id="copylight-attention">このサイトに掲載されている一切の文書・図版・写真等を、手段や形態を問わず複製・転載することを禁じます。</p>
+	<p id="copylight">&copy; 2016 Kuki Hokuyo High School Koyo Festival Executive Committee</p>
+</footer>
+<button class="header-back-to-top" id="toFilters">
+	絞り込み条件を変更する
+</button>
+<button type="button" class="sticky-back-to-top back-to-top">
+	<i class="material-icons">keyboard_arrow_up</i>
+</button>
+</body>
+</html>

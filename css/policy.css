@@ -1,0 +1,32 @@
+#contents-title {
+	background-color: #ffdc00;
+}
+#contents-title h2 i {
+	top: 6px;
+	right: 5px;
+}
+#contents-title h2:after {
+	width: 317px;
+}
+#main-contents {
+	max-width: 1250px;
+	min-width: 750px;
+	margin: 30px auto 0 auto;
+}
+.contents-wrapper {
+	max-width: 1000px;
+	padding: 0 20px;
+  margin: 0 auto 30px auto;
+}
+.contents-wrapper h2 {
+	font-size: 24px;
+	color: #ffdc00;
+  padding-left: 10px;
+  border-left: 10px solid #ffdc00;
+}
+.contents-wrapper ul li {
+	padding: 10px 10px 10px 10px;
+}
+footer {
+	margin-top: 150px;
+}

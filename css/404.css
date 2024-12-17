@@ -1,0 +1,58 @@
+nav {
+  min-width: 900px;
+  top: 0;
+}
+#main-contents {
+  position: relative;
+  max-width: 1000px;
+  min-width: 850px;
+  padding: 0 10px;
+  margin: 85px auto 0 auto;
+}
+.left-contents {
+  display: inline-block;
+  width: 60%;
+  margin: 0;
+}
+.not-found-title {
+  display:  inline-block;
+  font-size: 35px;
+  color: #ffdc00;
+  width: 50%;
+  margin: 90px 0px;
+}
+.not-found-message {
+  width: 100%;
+}
+.not-found-message p {
+  font-size: 18px;
+}
+.not-found-message p:nth-of-type(2) {
+  margin: 0 0 50px 0;
+}
+.right-contents {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 40%;
+  float: right;
+}
+.oops-img {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height: 430px;
+}
+.poster-attention {
+  position: absolute;
+  top: 480px;
+  right: 0;
+  font-size: 13px;
+  width: 304px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  min-width: 900px;
+}
