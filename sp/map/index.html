@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>会場マップ | 久喜北陽高校「第28回光陽祭」公式サイト</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+		<link rel="stylesheet" type="text/css" href="../CommonCss/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="../CommonCss/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../CommonCss/fonts.css"/>
+		<link rel="stylesheet" type="text/css" href="../CommonCss/examples.css"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/map.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/remodal.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/remodal-default-theme.css"/>
+		<script src="../CommonJs/vendor/modernizr.custom.min.js"></script>
+		<script src="../CommonJs/vendor/jquery-3.1.0.min.js"></script>
+		<script src="../CommonJs/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="../CommonJs/vendor/jquery.smooth-scroll.min.js"></script>
+		<script src="../CommonJs/vendor/jquery.darktooltip.min.js"></script>
+		<script src="../CommonJs/vendor/jquery.darktooltip.js"></script>
+		<script src="../CommonJs/vendor/jquery.skOuterClick.js"></script>
+		<script src="../CommonJs/vendor/remodal.min.js"></script>
+		<script src="../js/map.js"></script>
+	</head>
+	<body>
+		<nav>
+			<h2 id="title"><a href="../">第28回光陽祭</a></h2>
+			<div id="nav">
+				<div class="togglebtn">
+				<button type="button" id="menubtn">
+					<a id="menuButton" href="#">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</button>
+				<div id="menu">
+				<ul>
+					<li><a id="about" href="../about/">光陽祭について</a></li>
+					<li><a id="floormap" href="../map/">会場マップ</a></li>
+					<li><a id="exhibition" href="../exhibition/">出展企画</a></li>
+					<li><a id="stage" href="../stage/">体育館ステージ</a></li>
+					<li id="right"><a id="attention" href="../notice/">注意事項</a></li>
+				</ul>
+				</div>
+				</div>
+			</div>
+		</nav>
+		<div id="main-contents">
+			<div id="contents-title">
+				<h2><i class="material-icons">map</i>会場マップ</h2>
+			</div>
+			<p class="note">色のついている教室を選択すると選択した教室で出展を行う団体の出展情報を見ることができます。<br>マップの表示されていない部分はスクロールすることで見ることができます。</p>
+			<section class="work-section" id="work">
+				<header class="section-header clearfix">
+					<div class="inner">
+						<ul class="tabs-nav">
+							<li id="tab1">
+								<a href="#f1">
+									<span id="tab1-text">1F<span></span></span>
+								</a>
+							</li>
+							<li id="tab2">
+								<a href="#f2">
+									<span id="tab2-text">2F<span></span></span>
+								</a>
+							</li>
+							<li id="tab3">
+								<a href="#f3">
+									<span id="tab3-text">3F<span></span></span>
+								</a>
+							</li>
+							<li id="tab4">
+								<a href="#f4">
+									<span id="tab4-text">4F<span></span></span>
+								</a>
+							</li>
+						</ul>
+						<span class="tabs-highlight"></span>
+					</div>
+				</header>
+			<div class="section-body">
+				<section class="tabs-panel" id="f1">
+					<div id="image-wrapper">
+							<img class="map" src="../img/map_1.png" alt="" width="1000px">
+							<a data-remodal-target="modal-a101" class="popbtn" id="exhi-a101"><!--A101--></a>
+							<a data-remodal-target="modal-a102" class="popbtn" id="exhi-a102"><!--A102--></a>
+							<a data-remodal-target="modal-a103" class="popbtn" id="exhi-a103"><!--A103--></a>
+							<a data-remodal-target="modal-a104" class="popbtn" id="exhi-a104"><!--A104--></a>
+							<a data-remodal-target="modal-a105" class="popbtn" id="exhi-a105"><!--A105--></a>
+							<a data-remodal-target="modal-a106" class="popbtn" id="exhi-a106"><!--A106--></a>
+							<a data-remodal-target="modal-a107" class="popbtn" id="exhi-a107"><!--A107--></a>
+							<a data-remodal-target="modal-a108" class="popbtn" id="exhi-a108"><!--A108--></a>
+							<a data-remodal-target="modal-pho" class="popbtn" id="exhi-pho"><!--写真部--></a>
+							<a data-remodal-target="modal-lit" class="popbtn" id="exhi-lit"><!--文芸部--></a>
+							<a data-remodal-target="modal-ent" class="popbtn" id="exhi-ent"><!--昇降口--></a>
+							<a data-remodal-target="modal-eco" class="popbtn" id="exhi-eco"><!--家庭部--></a>
+							<a data-remodal-target="modal-kad" class="popbtn" id="exhi-kad"><!--華道部--></a>
+							<a data-remodal-target="modal-stage" class="popbtn" id="exhi-stage"><!--1階体育館--></a>
+							<img id="f1-wc-1" class="f1-wc" src="../img/wc_24dpi.png">
+							<img id="f1-wc-2" class="f1-wc" src="../img/wc_24dpi.png">
+							<img id="f1-stair-1" class="f1-stair mirror" src="../img/map-stair.png">
+							<img id="f1-stair-2" class="f1-stair" src="../img/map-stair.png">
+							<img id="f1-stair-3" class="f1-stair mirror" src="../img/map-stair.png">
+							<img id="f1-stair-4" class="f1-stair" src="../img/map-stair.png">
+					</div>
+				</section>
+				<section class="tabs-panel" id="f2">
+					<div id="image-wrapper">
+							<img class="map" src="../img/map_2.png" alt="" width="1000px">
+							<a data-remodal-target="modal-cal-f2" class="popbtn" id="exhi-cal-f2"><!--書道部・書道室--></a>
+							<a data-remodal-target="modal-art" class="popbtn" id="exhi-art"><!--美術部--></a>
+							<a data-remodal-target="modal-tea" class="popbtn" id="exhi-tea"><!--茶道部--></a>
+							<a data-remodal-target="modal-pub" class="popbtn" id="exhi-pub"><!--広報部--></a>
+							<a data-remodal-target="modal-reu" class="popbtn" id="exhi-reu"><!--同窓会--></a>
+							<a data-remodal-target="modal-lib" class="popbtn" id="exhi-lib"><!--図書委員会--></a>
+							<a data-remodal-target="modal-stage" class="popbtn" id="exhi-toStage"><!--1階体育館--></a>
+							<img id="f2-wc-1" class="f2-wc" src="../img/wc_24dpi.png">
+							<img id="f2-wc-2" class="f2-wc" src="../img/wc_24dpi.png">
+							<img id="f2-stair-1" class="f2-stair mirror" src="../img/map-stair.png">
+							<img id="f2-stair-2" class="f2-stair" src="../img/map-stair.png">
+							<img id="f2-stair-3" class="f2-stair mirror" src="../img/map-stair.png">
+							<img id="f2-stair-4" class="f2-stair" src="../img/map-stair.png">
+					</div>
+				</section>
+				<section class="tabs-panel" id="f3">
+					<div id="image-wrapper">
+							<img class="map" src="../img/map_3.png" alt="" width="1000px">
+						<a data-remodal-target="modal-a301" class="popbtn" id="exhi-a301"><!--A301--></a>
+						<a data-remodal-target="modal-a302" class="popbtn" id="exhi-a302"><!--A302--></a>
+						<a data-remodal-target="modal-a303" class="popbtn" id="exhi-a303"><!--A303--></a>
+						<a data-remodal-target="modal-a304" class="popbtn" id="exhi-a304"><!--A304--></a>
+						<a data-remodal-target="modal-a305" class="popbtn" id="exhi-a305"><!--A305--></a>
+						<a data-remodal-target="modal-a306" class="popbtn" id="exhi-a306"><!--A306--></a>
+						<a data-remodal-target="modal-a307" class="popbtn" id="exhi-a307"><!--A307--></a>
+						<a data-remodal-target="modal-a308" class="popbtn" id="exhi-a308"><!--A308--></a>
+						<a data-remodal-target="modal-dpu" class="popbtn" id="exhi-dpu"><!--情報処理部--></a>
+						<a data-remodal-target="modal-ess" class="popbtn" id="exhi-ess"><!--ESS部--></a>
+						<a data-remodal-target="modal-pta-cul" class="popbtn" id="exhi-pta-cul"><!--PTA教養文化体験--></a>
+						<a data-remodal-target="modal-pta-head" class="popbtn" id="exhi-pta-head"><!--PTA本部--></a>
+						<img id="f3-wc-1" class="f3-wc" src="../img/wc_24dpi.png">
+						<img id="f3-wc-2" class="f3-wc" src="../img/wc_24dpi.png">
+						<img id="f3-stair-1" class="f3-stair mirror" src="../img/map-stair.png">
+						<img id="f3-stair-2" class="f3-stair" src="../img/map-stair.png">
+						<img id="f3-stair-3" class="f3-stair mirror" src="../img/map-stair.png">
+						<img id="f3-stair-4" class="f3-stair" src="../img/map-stair.png">
+					</div>
+				</section>
+				<section class="tabs-panel" id="f4">
+					<div id="image-wrapper">
+							<img class="map" src="../img/map_4.png" alt="" width="1000px">
+						<a data-remodal-target="modal-a401" class="popbtn" id="exhi-a401"><!--A401--></a>
+						<a data-remodal-target="modal-a402" class="popbtn" id="exhi-a402"><!--A402--></a>
+						<a data-remodal-target="modal-a403" class="popbtn" id="exhi-a403"><!--A403--></a>
+						<a data-remodal-target="modal-a404" class="popbtn" id="exhi-a404"><!--A404--></a>
+						<a data-remodal-target="modal-a405" class="popbtn" id="exhi-a405"><!--A405--></a>
+						<a data-remodal-target="modal-a406" class="popbtn" id="exhi-a406"><!--A406--></a>
+						<a data-remodal-target="modal-a407" class="popbtn" id="exhi-a407"><!--A407--></a>
+						<a data-remodal-target="modal-a408" class="popbtn" id="exhi-a408"><!--A408--></a>
+						<a data-remodal-target="modal-soc" class="popbtn" id="exhi-soc"><!--社会部--></a>
+						<a data-remodal-target="modal-sci" class="popbtn" id="exhi-sci"><!--理科部--></a>
+						<a data-remodal-target="modal-cho" class="popbtn" id="exhi-cho"><!--コーラス部--></a>
+						<img id="f4-wc-1" class="f4-wc" src="../img/wc_24dpi.png">
+						<img id="f4-wc-2" class="f4-wc" src="../img/wc_24dpi.png">
+						<img id="f4-stair-1" class="f4-stair mirror" src="../img/map-stair.png">
+						<img id="f4-stair-2" class="f4-stair" src="../img/map-stair.png">
+						<img id="f4-stair-3" class="f4-stair mirror" src="../img/map-stair.png">
+						<img id="f4-stair-4" class="f4-stair" src="../img/map-stair.png">
+					</div>
+				</section>
+				<div class="category">
+					<label id="category-1">1年生</label>
+					<label id="category-2">2年生</label>
+					<label id="category-3">3年生</label>
+					<label id="category-club">部活動</label>
+					<label id="category-sponsor">主催企画</label>
+					<label id="category-wc">トイレ</label>
+					<label id="category-stair">階段</label>
+				</div>
+			</div>
+		</div>
+
+		</section>
+		<footer>
+			<div id="pagetop">
+				<span class="btn back-to-top">
+					<i class="material-icons">keyboard_arrow_up</i>
+				</span>
+			</div>
+			<p class="copylight-attention">このサイトに掲載されている一切の文書・図版・写真等を、</p>
+			<p class="copylight-attention">手段や形態を問わず複製・転載することを禁じます。</p>
+			<p class="copylight">&copy; 2016 Kuki Hokuyo High School</p>
+			<p class="copylight">Koyo Festival Executive Committee</p>
+		</footer>
+
+		<!--ポップアップのコンテンツ-->
+
+		<!--1階-->
+		<div class="remodal" data-remodal-id="modal-a101" data-remodal-options="hashTracking:false">
+			<h2>2年1組</h2>
+			<h1>渡邊病院</h1>
+			<p>今や廃病院となった渡邊病院。あなたはこの恐怖に耐え、ミッションを無事クリアできるのか！？では、みなさんの無事を…</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a102" data-remodal-options="hashTracking:false">
+			<h2>2年2組</h2>
+			<h1>岡部庵 Part2</h1>
+			<p>昨年に続き、大好評だった「岡部庵」を1年振りにリニューアルオープンします。バージョンアップした新店舗に乞うご期待を。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a103" data-remodal-options="hashTracking:false">
+			<h2>2年3組</h2>
+			<h1>Nightmare World</h1>
+			<p>ディズニー作品である「ホーンテッドマンション」×「ナイトメアビフォアークリスマス」の世界観を忠実に再現したアトラクションです。ジャック達が皆さんをお待ちしています。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a104" data-remodal-options="hashTracking:false">
+			<h2>2年4組</h2>
+			<h1>律子の館～下の句～</h1>
+			<p>魔女律子の500歳の誕生日にプレゼントとして生きた人の血を捧げます。襲い掛かってくる律子たちの恐怖にあなたは耐えきれるか！？</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a105" data-remodal-options="hashTracking:false">
+			<h2>2年5組</h2>
+			<h1>カップリング<br>～運命の恋、拾いました～</h1>
+			<p>番号が合った人と奇跡の出会い！？青春な写真もたくさん撮れます。ぜひ2年5組に来て下さい。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a106" data-remodal-options="hashTracking:false">
+			<h2>2年6組</h2>
+			<h1>GITA house</h1>
+			<p>かっこいい音楽や、ゲームを用意しています！ぜひGITA houseへ来てください！お待ちしています！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a107" data-remodal-options="hashTracking:false">
+			<h2>2年7組</h2>
+			<h1>だがしかし</h1>
+			<p>冷たいラムネやたくさんの駄菓子を販売しています！！そのほかにも射的もあり成功すればお菓子がもらえます。ぜひ来店してください！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a108" data-remodal-options="hashTracking:false">
+			<h2>2年8組</h2>
+			<h1>NIHACHI HOUSE</h1>
+			<p>子供から大人まで楽しめる迷路アトラクション！ぜひ2年8組 NIHACHI HOUSEに来てください！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-pho" data-remodal-options="hashTracking:false">
+			<h2>写真部</h2>
+			<h1>写真展</h1>
+			<p>部員が一生懸命準備した、今まで撮った様々な写真の展示。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-lit" data-remodal-options="hashTracking:false">
+			<h2>文芸部</h2>
+			<h1>部誌ロード</h1>
+			<p>昇降口左手階段下で部誌を販売しています。部員皆で精一杯作った至高の一冊を、ぜひ手にお取りください！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-ent" data-remodal-options="hashTracking:false">
+			<h2>書道部</h2>
+			<h1>展覧会(昇降口)</h1>
+			<p>夏休みの間練習した作品を書道室にて展示します。恒例となった部員全員による大作も昇降口にて展示するので、ぜひご覧ください。</p>
+			<h2>JRC部</h2>
+			<h1>募金活動</h1>
+			<p>あなたの力で世界を変えませんか??昇降口前にてあなたをお待ちしています。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-eco" data-remodal-options="hashTracking:false">
+			<h2>家庭部</h2>
+			<h1>手作りお菓子の販売</h1>
+			<p>部員達が一生懸命作ったブラウニーとクッキー（プレーン、チョコチップ、ココアナッツ）の詰め合わせで販売します。毎年大人気なので、ぜひぜひ食べに来てください！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-kad" data-remodal-options="hashTracking:false">
+			<h2>華道部</h2>
+			<h1>展示＆アレンジ体験</h1>
+			<p>華道部では、部員の作品展示を行います。また、500円でのアレンジメント体験を行います。教室内も可愛くしてあるので、ぜひ来てください！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-stage" data-remodal-options="hashTracking:false">
+			<h2>体育館</h2>
+			<h1>ステージパフォーマンス</h1>
+			<p>総勢 40名を超えるパフォーマーたちが暑い夏を盛り上げます。ステージパフォーマンスは体育館の2階で行われています。</p>
+			<a href="../stage/"><button class="remodal-confirm">タイムテーブル</button></a>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+
+		<!--2階-->
+		<div class="remodal" data-remodal-id="modal-cal-f2" data-remodal-options="hashTracking:false">
+			<h2>書道部</h2>
+			<h1>展覧会</h1>
+			<p>夏休みの間練習した作品を書道室にて展示します。恒例となった部員全員による大作も昇降口にて展示するので、ぜひご覧ください。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-art" data-remodal-options="hashTracking:false">
+			<h2>美術部</h2>
+			<h1>びじゅちゅーん</h1>
+			<p>デッサン、油画、静物画…個性溢れまくっているメンバーによる作品を展示しています。フラッと入ってゆるゆるっと鑑賞していって下さい。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-tea" data-remodal-options="hashTracking:false">
+			<h2>茶道部</h2>
+			<h1>お茶会</h1>
+			<p>茶道部員が浴衣を着てお点前をします。抹茶とお菓子で100円です。2階中会議室で部員一同お待ちしています。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-pub" data-remodal-options="hashTracking:false">
+			<h2>広報部</h2>
+			<h1>個別相談コーナー</h1>
+			<p>本校への進学を考えている中学生の皆さん、保護者の皆さんへ11:00～14:00に個別相談会を実施しています。あなたの質問にお答えします。お気軽にどうぞ。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-reu" data-remodal-options="hashTracking:false">
+			<h2>同窓会</h2>
+			<h1>休憩所</h1>
+			<p>無料のドリンク・お菓子を用意。キッズスペースもあり。13:00より同窓会総会を行います。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-lib" data-remodal-options="hashTracking:false">
+			<h2>図書委員会</h2>
+			<h1>ブックカバー・しおり製作</h1>
+			<p>ブックカバー・しおり製作を行っています。自分専用のブックカバーやしおりで、もっと楽しくLet's 読書！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+
+		<!--3階-->
+		<div class="remodal" data-remodal-id="modal-a301" data-remodal-options="hashTracking:false">
+			<h2>3年1組</h2>
+			<h1>おだ～かパパの31アイスクリーム</h1>
+			<p>私たち3年1組はアイスとジュースを売ります！！3年1組なので31アイスクリームも数量限定で販売します！！午前と午後で店内の雰囲気がかわるので、何度きてもみなさまにお楽しみいただけるようになっています！！店員のかわいいコスチュームをするのでお楽しみに～（・ｖ・）</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a302" data-remodal-options="hashTracking:false">
+			<h2>3年2組</h2>
+			<h1>Harry Potter</h1>
+			<p>私達3-2は、「夢を現実に」をテーマに、ハリーポッターの世界を体験できるクラスです。「魔法を使いたい！」と現実逃避しているそこのあなた！3-2城でお待ちしております。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a303" data-remodal-options="hashTracking:false">
+			<h2>3年3組</h2>
+			<h1>デイリー山崎</h1>
+			<p>私たちは食品販売にしました。飲み物と山崎パンを売ります！！ライブステージでイベントもやっているのでぜひ来てください。待ってます！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a304" data-remodal-options="hashTracking:false">
+			<h2>3年4組</h2>
+			<h1>神秘の部屋－TORE!－</h1>
+			<p>3-4が作り出した神秘的な空間で、様々なミッションに参加してもらい、クリアできなかったらこの部屋を脱出することが出来ない…。あなたはこの部屋を脱出することができるのか！？</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a305" data-remodal-options="hashTracking:false">
+			<h2>3年5組</h2>
+			<h1>In to the R.I.P</h1>
+			<p>忍び寄る恐怖にあなたは耐えられるか！？ホッとする間もない一瞬一瞬をあなたにお届けいたします。ぜひ3年5組へ…</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a306" data-remodal-options="hashTracking:false">
+			<h2>3年6組</h2>
+			<h1>VSサンロク</h1>
+			<p>あの人気番組「VS嵐」が3年6組にやってきた！！3年6組の愉快な仲間がみんなのこと待ってるよ&#9829;最高得点を獲るのは誰だ！？ぜひきてね&#9829;&#9829;</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a307" data-remodal-options="hashTracking:false">
+			<h2>3年7組</h2>
+			<h1>～ミス・ミスターコン～</h1>
+			<p>毎年恒例、3-7のミス＆ミスターコンです☆☆各学年のミスコン、ミスターコンなど様々な人が集まります！とっても盛り上がるので、ぜひ3-7に来てください！！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a308" data-remodal-options="hashTracking:false">
+			<h2>3年8組</h2>
+			<h1>お化け屋敷</h1>
+			<p>3年8組こと、サンパチのおばけやしきです。とってもこわーーーーーーーーーーーーーーーーーーーーいです</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-dpu" data-remodal-options="hashTracking:false">
+			<h2>情報処理部</h2>
+			<h1>アトラクション<br>プログラミング教室<br>レビュークイズetc…</h1>
+			<p>ここでは、ゲームを作りながら学習するプログラミング教室を開講しています。また、来場者参加型のクイズショーも開催します。その他、アスキーアートの作成、課題研究発表も行います。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-ess" data-remodal-options="hashTracking:false">
+			<h2>ESS部</h2>
+			<h1>プーさんのステンドグラス</h1>
+			<p>LL教室の窓をプーさんのステンドグラスで飾ります！部活動の内容を紹介する展示物もあります。ぜひ3階LL教室まで！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-pta-cul" data-remodal-options="hashTracking:false">
+			<h2>PTA教養文化体験</h2>
+			<h1>ビーズ・アクセサリー作り</h1>
+			<p>ビーズでブレスレット、ストラップ、アクセサリー作りが体験できます。1つ50円です。毎年大好評で、大勢の皆様に喜んで頂いています。ぜひお立寄り下さい。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-pta-head" data-remodal-options="hashTracking:false">
+			<h2>PTA本部</h2>
+			<h1>リラックママ</h1>
+			<p>会場巡りに疲れた時、ゆっくりまったり出来る部屋です！冷たい麦茶とお菓子を用意してお待ちしています。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+
+		<!--4階-->
+		<div class="remodal" data-remodal-id="modal-a401" data-remodal-options="hashTracking:false">
+			<h2>1年1組</h2>
+			<h1>赤い女</h1>
+			<p>舞台は夜の病院。迫り来るお化け達から赤ちゃんを助け出そう！！是非来てください！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a402" data-remodal-options="hashTracking:false">
+			<h2>1年2組</h2>
+			<h1>戦慄刑務所</h1>
+			<p>この刑務所は危険です。逃げてください。もう何が起こるかわかりません。来るか来ないかはあなた次第です。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a403" data-remodal-options="hashTracking:false">
+			<h2>1年3組</h2>
+			<h1>ミニミニミニオン</h1>
+			<p>ミニオンの世界で謎をとき、バナナをＧＥＴしてゴールを目指せ！ぜひ1-3まで来てください！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a404" data-remodal-options="hashTracking:false">
+			<h2>1年4組</h2>
+			<h1>Ennichi</h1>
+			<p>楽しいアトラクション、記念撮影が出来る顔出しパネルがあります。また、ビンゴも開催するのでぜひ来て下さい！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a405" data-remodal-options="hashTracking:false">
+			<h2>1年5組</h2>
+			<h1>Summer&amp;Winter</h1>
+			<p>冷たいアイスやジュースを多くそろえています。また、割引きサービス付きのミニゲームも用意しています。ぜひ1-5まで！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a406" data-remodal-options="hashTracking:false">
+			<h2>1年6組</h2>
+			<h1>はじめてのワッショイ</h1>
+			<p>今年の夏は楽しんでる？まだ夏は終わらない！定番なものから、このクラス唯一の企画も！ワッショイしよう！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a407" data-remodal-options="hashTracking:false">
+			<h2>1年7組</h2>
+			<h1>Splash Tapioka</h1>
+			<p>1年7組ではタピオカとミスタードーナツを販売しています。教室の半分では休憩所。そして、教室のもう半分では、少し変わった方法で販売しています。汗が水しぶきになるくらい頑張りますので、ぜひ1年7組に来てください。</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-a408" data-remodal-options="hashTracking:false">
+			<h2>1年8組</h2>
+			<h1>Hachiy Potter<br>～魔法使いになろう～</h1>
+			<p>この迷路を制した者は夢の「魔法使い」になれる！迷路の途中にあるアトラクションやクイズの成績が良ければ良いほど高ランクの魔法使いに近づけます。最後にはみんなが憧れる魔法使いの「あの人」と会うことができるカモ！ぜひ1-8の迷路をお楽しみ下さい！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-soc" data-remodal-options="hashTracking:false">
+			<h2>社会部</h2>
+			<h1>部誌の配布</h1>
+			<p>社会部の部誌配布です。地理や歴史についてまとめました。雑学的な知識や勉強の役に立つかも！！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-sci" data-remodal-options="hashTracking:false">
+			<h2>理科部</h2>
+			<h1>研究展示発表</h1>
+			<p>理科部では研究結果の展示や、アルコールロケットの発射をやっています。今回はそれに加え、実験もやる予定なので、理科が好き、興味がある人は是非来てください！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+		<div class="remodal" data-remodal-id="modal-cho" data-remodal-options="hashTracking:false">
+			<h2>コーラス部</h2>
+			<h1>うたうたいのうた</h1>
+			<p>一度は耳にしたことがある、そんな曲を女声合唱でお届けします！！12：00から4階の視聴覚室で待ってます！！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+
+		<!--グラウンド-->
+		<div class="remodal" data-remodal-id="modal-" data-remodal-options="hashTracking:false">
+			<h2>野球部</h2>
+			<h1>招待試合<br>久喜北陽 vs 境</h1>
+			<p>9月4日日曜日、文化祭一般公開日に茨城県立境高校を招き、9時30分から1試合のみ試合を行います。ぜひ見に来て下さい！</p>
+			<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+		</div>
+
+<script>
+	$(document).ready( function(){
+
+    //Basic
+    $('#example').darkTooltip();
+
+    //With some options
+    $('#light').darkTooltip({
+        animation:'flipIn',
+        gravity:'west',
+        confirm:true,
+        theme:'light'
+    });
+});
+</script>
+</body>
+</html>
