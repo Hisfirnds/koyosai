@@ -1,0 +1,59 @@
+@charset 'UTF-8';.slick-loading .slick-list{background:#fff url('../img/ajax-loader.gif') center center no-repeat;}
+@font-face{font-family:'slick';font-weight:normal;font-style:normal;src:url('../fonts/slick.eot');src:url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');}
+.slider .slick-prev,
+.slider .slick-next{font-size:0;line-height:0;position:absolute;top:50%;display:block;padding:0;-webkit-transform:translate(0, -50%);-ms-transform:translate(0, -50%);transform:translate(0, -50%);cursor:pointer;color:transparent;border:none;outline:none;background:transparent;}
+.slider .slick-prev:hover,
+.slider .slick-prev:focus,
+.slider .slick-next:hover,
+.slider .slick-next:focus{color:transparent;outline:none;background:transparent;}
+.slider .slick-prev:hover:before,
+.slider .slick-prev:focus:before,
+.slider .slick-next:hover:before,
+.slider .slick-next:focus:before{opacity:1;}
+.slider .slick-prev.slick-disabled:before,
+.slider .slick-next.slick-disabled:before{opacity:.25;}
+.slider .slick-prev:before,
+.slider .slick-next:before{font-family:'slick';font-size:20px;line-height:1;opacity:.75;color:white;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.slider .slick-prev{left:0;z-index:100;}
+.slider [dir='rtl'] .slick-prev{right:-25px;left:auto;}
+.slider .slick-next{right:0;z-index:99;}
+.slider [dir='rtl'] .slick-next{right:auto;left:-25px;}
+.slider .slick-prev i,
+.slider .slick-next i{color:#ffdc00;font-size:137px;}
+.slick-dotted.slick-slider{margin-bottom:30px;}
+.slick-dots{position:absolute;bottom:-24px;display:block;width:100%;padding:0;margin:0;list-style:none;text-align:center;}
+.slick-dots li{position:relative;display:inline-block;width:20px;height:20px;margin:0 5px;padding:0;cursor:pointer;}
+.slick-dots li button{font-size:0;line-height:0;display:block;width:20px;height:20px;padding:5px;cursor:pointer;color:transparent;border:0;outline:none;background:transparent;}
+.slick-dots li button:hover,
+.slick-dots li button:focus{outline:none;}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before{opacity:1;}
+.slick-dots li button:before{content:"";width:9px;height:9px;background:#ddd;border:1px solid #ddd;border-radius:70px;-moz-border-radius:70px;-webkit-border-radius:70px;display:block;transition:all 0.2s ease-in;-webkit-transition:all 0.2s ease-in;}
+.slick-dots li.slick-active button:before{border:1px solid #ffdc00;background:#ffdc00;}
+.ticker-slider .slick-prev{left:-15px;z-index:100;}
+.ticker-slider [dir='rtl'] .slick-prev{right:-25px;left:auto;}
+.ticker-slider .slick-next{right:-7px;z-index:99;}
+.ticker-slider [dir='rtl'] .slick-next{right:auto;left:-25px;}
+.ticker-slider .slick-prev i,
+.ticker-slider .slick-next i{color:#55acee;font-size:137px;}
+.ticker-slider .slick-prev,
+.ticker-slider .slick-next{font-size:0;line-height:0;position:absolute;top:83%;display:block;padding:0;-webkit-transform:translate(0, -50%);-ms-transform:translate(0, -50%);transform:translate(0, -50%);cursor:pointer;color:transparent;border:none;outline:none;background:transparent;}
+.ticker-slider .slick-prev:hover,
+.ticker-slider .slick-prev:focus,
+.ticker-slider .slick-next:hover,
+.ticker-slider .slick-next:focus{color:transparent;outline:none;background:transparent;}
+.ticker-slider .slick-prev:hover:before,
+.ticker-slider .slick-prev:focus:before,
+.ticker-slider .slick-next:hover:before,
+.ticker-slider .slick-next:focus:before{opacity:1;}
+.ticker-slider .slick-prev.slick-disabled:before,
+.ticker-slider .slick-next.slick-disabled:before{opacity:.25;}
+.ticker-slider .slick-prev:before,
+.ticker-slider .slick-next:before{font-family:'slick';font-size:20px;line-height:1;opacity:.75;color:white;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.ticker-slider .slick-prev{left:83%;z-index:100;}
+.ticker-slider [dir='rtl'] .slick-prev{right:-25px;left:auto;}
+.ticker-slider .slick-next{right:0%;z-index:99;}
+.ticker-slider [dir='rtl'] .slick-next{right:auto;left:-25px;}
+.ticker-slider .slick-prev i,
+.ticker-slider .slick-next i{color:#55acee;font-size:60px;}
+.ticker-slider .slick-next i{margin-top:-2px;}
